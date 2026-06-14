@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Checkout</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body id="checkoutPage">
+    <div id="navbar-placeholder"></div>
+    <main class="page-content">
+        <section class="checkout-section">
+            <div class="checkout-form">
+                <h2>Checkout</h2>
+                <form id="checkoutForm">
+                    <label>Full Name<input type="text" id="customerName" required></label>
+                    <label>Email<input type="email" id="customerEmail" required></label>
+                    <label>Phone<input type="tel" id="customerPhone" required></label>
+                    <label>Address<input type="text" id="customerAddress" required></label>
+                    <label>City<input type="text" id="customerCity" required></label>
+                    <label>State<input type="text" id="customerState" required></label>
+                    <label>Pincode<input type="text" id="customerPostal" required></label>
+                    <button type="submit" class="button">Place Order</button>
+                </form>
+            </div>
+            <aside class="checkout-summary">
+                <h3>Order Summary</h3>
+                <div id="checkoutSummary"></div>
+            </aside>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <div id="scroll-top-placeholder"></div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/checkout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Products</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body id="productsPage">
+    <div id="navbar-placeholder"></div>
+    <main class="page-content">
+        <section class="products-page">
+            <aside class="sidebar">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <label>Category</label>
+                    <select id="categoryFilter">
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <input type="range" id="priceRange" min="10" max="500" value="500">
+                    <span id="priceValue">$500</span>
+                </div>
+            </aside>
+            <section class="products-grid-section">
+                <div class="section-header">
+                    <h2>All Products</h2>
+                </div>
+                <div class="product-grid" id="productList"></div>
+            </section>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <div id="scroll-top-placeholder"></div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+
+</html>

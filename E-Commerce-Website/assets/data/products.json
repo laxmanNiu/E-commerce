@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "electronics",
+        "price": 129.99,
+        "rating": 4.7,
+        "image": "https://via.placeholder.com/400x300?text=Headphones",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Headphones+1",
+            "https://via.placeholder.com/700x500?text=Headphones+2",
+            "https://via.placeholder.com/700x500?text=Headphones+3"
+        ],
+        "description": "Premium wireless headphones with noise cancellation and long battery life."
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "category": "electronics",
+        "price": 189.99,
+        "rating": 4.5,
+        "image": "https://via.placeholder.com/400x300?text=Smart+Watch",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Smart+Watch+1",
+            "https://via.placeholder.com/700x500?text=Smart+Watch+2",
+            "https://via.placeholder.com/700x500?text=Smart+Watch+3"
+        ],
+        "description": "Track your activity, notifications, and wellness from a sleek modern smartwatch."
+    },
+    {
+        "id": 3,
+        "name": "Leather Jacket",
+        "category": "fashion",
+        "price": 199.99,
+        "rating": 4.8,
+        "image": "https://via.placeholder.com/400x300?text=Leather+Jacket",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Leather+Jacket+1",
+            "https://via.placeholder.com/700x500?text=Leather+Jacket+2",
+            "https://via.placeholder.com/700x500?text=Leather+Jacket+3"
+        ],
+        "description": "A stylish leather jacket designed for comfort and urban appeal."
+    },
+    {
+        "id": 4,
+        "name": "Running Sneakers",
+        "category": "shoes",
+        "price": 89.99,
+        "rating": 4.4,
+        "image": "https://via.placeholder.com/400x300?text=Running+Sneakers",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Running+Sneakers+1",
+            "https://via.placeholder.com/700x500?text=Running+Sneakers+2",
+            "https://via.placeholder.com/700x500?text=Running+Sneakers+3"
+        ],
+        "description": "Lightweight running sneakers built for comfort and dependable traction."
+    },
+    {
+        "id": 5,
+        "name": "Fashion Sunglasses",
+        "category": "accessories",
+        "price": 49.99,
+        "rating": 4.2,
+        "image": "https://via.placeholder.com/400x300?text=Sunglasses",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Sunglasses+1",
+            "https://via.placeholder.com/700x500?text=Sunglasses+2",
+            "https://via.placeholder.com/700x500?text=Sunglasses+3"
+        ],
+        "description": "Protect your eyes in style with premium frame details and UV protection."
+    },
+    {
+        "id": 6,
+        "name": "Backpack",
+        "category": "accessories",
+        "price": 59.99,
+        "rating": 4.6,
+        "image": "https://via.placeholder.com/400x300?text=Backpack",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Backpack+1",
+            "https://via.placeholder.com/700x500?text=Backpack+2",
+            "https://via.placeholder.com/700x500?text=Backpack+3"
+        ],
+        "description": "Durable daily backpack with smart organization pockets for work or travel."
+    },
+    {
+        "id": 7,
+        "name": "Denim Jeans",
+        "category": "fashion",
+        "price": 69.99,
+        "rating": 4.3,
+        "image": "https://via.placeholder.com/400x300?text=Denim+Jeans",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Denim+Jeans+1",
+            "https://via.placeholder.com/700x500?text=Denim+Jeans+2",
+            "https://via.placeholder.com/700x500?text=Denim+Jeans+3"
+        ],
+        "description": "Classic denim jeans cut for everyday comfort and modern style."
+    },
+    {
+        "id": 8,
+        "name": "Bluetooth Speaker",
+        "category": "electronics",
+        "price": 79.99,
+        "rating": 4.5,
+        "image": "https://via.placeholder.com/400x300?text=Bluetooth+Speaker",
+        "gallery": [
+            "https://via.placeholder.com/700x500?text=Speaker+1",
+            "https://via.placeholder.com/700x500?text=Speaker+2",
+            "https://via.placeholder.com/700x500?text=Speaker+3"
+        ],
+        "description": "Compact Bluetooth speaker with rich sound and long battery life."
+    }
+]
