@@ -29,10 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
         error.textContent = '';
         form.reset();
     });
-    if (window.jQuery) {
-        $('#contactForm').on('submit', function (event) {
-            event.preventDefault();
-            if (!validateForm()) return;
-        });
-    }
 });

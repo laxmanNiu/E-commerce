@@ -1,6 +1,6 @@
 from pathlib import Path
 
-root = Path(r"d:/E-commerce/E-Commerce-Website")
+root = Path(__file__).resolve().parent / "E-Commerce-Website"
 paths = [
     root,
     root / "assets" / "css",

@@ -1,0 +1,13 @@
+{
+    "name": "shopease-ecommerce-site",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Static e-commerce demo site for ShopEase with local Node server support.",
+    "main": "assets/js/local-server.js",
+    "scripts": {
+        "start": "node assets/js/local-server.js"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

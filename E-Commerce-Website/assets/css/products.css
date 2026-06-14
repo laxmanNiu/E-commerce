@@ -35,6 +35,11 @@
 }
 
 .product-card img {
+    min-height: 260px;
+    object-fit: cover;
+}
+
+.product-card img {
     border-radius: 18px;
 }
 

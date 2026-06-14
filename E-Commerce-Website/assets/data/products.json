@@ -1,114 +1,142 @@
 [
     {
         "id": 1,
-        "name": "Wireless Headphones",
+        "name": "Noise-Canceling Wireless Headphones",
         "category": "electronics",
-        "price": 129.99,
-        "rating": 4.7,
-        "image": "https://via.placeholder.com/400x300?text=Headphones",
+        "price": 149.99,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1512058564366-c9e6d9f2df1a?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Headphones+1",
-            "https://via.placeholder.com/700x500?text=Headphones+2",
-            "https://via.placeholder.com/700x500?text=Headphones+3"
+            "https://images.unsplash.com/photo-1512058564366-c9e6d9f2df1a?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1519052537650-5d5a34a2f89c?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1518440710871-1c503484d6c6?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Premium wireless headphones with noise cancellation and long battery life."
+        "description": "Premium over-ear wireless headphones with active noise cancellation and up to 30 hours of battery life."
     },
     {
         "id": 2,
-        "name": "Smart Watch",
-        "category": "electronics",
-        "price": 189.99,
-        "rating": 4.5,
-        "image": "https://via.placeholder.com/400x300?text=Smart+Watch",
+        "name": "Men's Leather Bomber Jacket",
+        "category": "fashion",
+        "price": 219.99,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Smart+Watch+1",
-            "https://via.placeholder.com/700x500?text=Smart+Watch+2",
-            "https://via.placeholder.com/700x500?text=Smart+Watch+3"
+            "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1523381211405-4a0a4973c8a9?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Track your activity, notifications, and wellness from a sleek modern smartwatch."
+        "description": "Classic leather bomber jacket with a polished finish, warm lining, and modern tailored fit."
     },
     {
         "id": 3,
-        "name": "Leather Jacket",
-        "category": "fashion",
-        "price": 199.99,
-        "rating": 4.8,
-        "image": "https://via.placeholder.com/400x300?text=Leather+Jacket",
+        "name": "Urban Running Sneakers",
+        "category": "shoes",
+        "price": 99.99,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1528701800489-20da3f5f285e?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Leather+Jacket+1",
-            "https://via.placeholder.com/700x500?text=Leather+Jacket+2",
-            "https://via.placeholder.com/700x500?text=Leather+Jacket+3"
+            "https://images.unsplash.com/photo-1528701800489-20da3f5f285e?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "A stylish leather jacket designed for comfort and urban appeal."
+        "description": "Lightweight running sneakers with breathable mesh, responsive cushioning, and modern city-ready styling."
     },
     {
         "id": 4,
-        "name": "Running Sneakers",
-        "category": "shoes",
-        "price": 89.99,
-        "rating": 4.4,
-        "image": "https://via.placeholder.com/400x300?text=Running+Sneakers",
+        "name": "Smart Fitness Watch",
+        "category": "electronics",
+        "price": 179.99,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Running+Sneakers+1",
-            "https://via.placeholder.com/700x500?text=Running+Sneakers+2",
-            "https://via.placeholder.com/700x500?text=Running+Sneakers+3"
+            "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Lightweight running sneakers built for comfort and dependable traction."
+        "description": "Full-featured smartwatch with sleep tracking, heart rate monitoring, and smartphone notifications."
     },
     {
         "id": 5,
-        "name": "Fashion Sunglasses",
+        "name": "Women's Everyday Tote Bag",
         "category": "accessories",
-        "price": 49.99,
-        "rating": 4.2,
-        "image": "https://via.placeholder.com/400x300?text=Sunglasses",
+        "price": 69.99,
+        "rating": 4.4,
+        "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Sunglasses+1",
-            "https://via.placeholder.com/700x500?text=Sunglasses+2",
-            "https://via.placeholder.com/700x500?text=Sunglasses+3"
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1495121605193-b116b5b9c5d9?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Protect your eyes in style with premium frame details and UV protection."
+        "description": "Roomy leather tote bag with interior organization pockets and polished hardware for daily carry."
     },
     {
         "id": 6,
-        "name": "Backpack",
+        "name": "Minimalist Sunglasses",
         "category": "accessories",
         "price": 59.99,
-        "rating": 4.6,
-        "image": "https://via.placeholder.com/400x300?text=Backpack",
+        "rating": 4.3,
+        "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Backpack+1",
-            "https://via.placeholder.com/700x500?text=Backpack+2",
-            "https://via.placeholder.com/700x500?text=Backpack+3"
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1475180098322-c7c716c9f1b4?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Durable daily backpack with smart organization pockets for work or travel."
+        "description": "Sleek designer sunglasses with UV protection and premium acetate frames for everyday style."
     },
     {
         "id": 7,
-        "name": "Denim Jeans",
+        "name": "Premium Denim Jeans",
         "category": "fashion",
-        "price": 69.99,
-        "rating": 4.3,
-        "image": "https://via.placeholder.com/400x300?text=Denim+Jeans",
+        "price": 79.99,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1512438312690-76d5c5d2a58d?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Denim+Jeans+1",
-            "https://via.placeholder.com/700x500?text=Denim+Jeans+2",
-            "https://via.placeholder.com/700x500?text=Denim+Jeans+3"
+            "https://images.unsplash.com/photo-1512438312690-76d5c5d2a58d?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1495121605193-b116b5b9c5d9?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Classic denim jeans cut for everyday comfort and modern style."
+        "description": "Classic slim-fit denim jeans made with stretch fabric for comfort and everyday wear."
     },
     {
         "id": 8,
-        "name": "Bluetooth Speaker",
+        "name": "Portable Bluetooth Speaker",
         "category": "electronics",
-        "price": 79.99,
-        "rating": 4.5,
-        "image": "https://via.placeholder.com/400x300?text=Bluetooth+Speaker",
+        "price": 89.99,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80",
         "gallery": [
-            "https://via.placeholder.com/700x500?text=Speaker+1",
-            "https://via.placeholder.com/700x500?text=Speaker+2",
-            "https://via.placeholder.com/700x500?text=Speaker+3"
+            "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=1200&q=80"
         ],
-        "description": "Compact Bluetooth speaker with rich sound and long battery life."
+        "description": "Portable Bluetooth speaker with rich stereo sound, deep bass, and water-resistant casing."
+    },
+    {
+        "id": 9,
+        "name": "Classic Leather Wallet",
+        "category": "accessories",
+        "price": 39.99,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1470163395405-d2b4e82c6fb5?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1470163395405-d2b4e82c6fb5?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512465277006-89b4887ece4a?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Luxury leather wallet with multiple card slots, cash compartment, and slim profile."
+    },
+    {
+        "id": 10,
+        "name": "Everyday Canvas Backpack",
+        "category": "accessories",
+        "price": 79.99,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Durable canvas backpack with padded shoulder straps, laptop compartment, and everyday storage pockets."
     }
 ]

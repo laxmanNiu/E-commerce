@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     initNavToggle();
     initScrollToTop();
     loadPageFeatures();
+    await loadPageScript('assets/js/auth.js');
+    dispatchComponentsLoaded();
+    loadPageSpecificScripts();
 });
 
 async function loadComponent(url, targetId) {
@@ -15,6 +18,43 @@ async function loadComponent(url, targetId) {
     } catch (error) {
         console.warn('Component load failed', url, error);
     }
+}
+
+function dispatchComponentsLoaded() {
+    document.dispatchEvent(new Event('componentsLoaded'));
+}
+
+function loadPageScript(src) {
+    return new Promise((resolve, reject) => {
+        if (document.querySelector(`script[src="${src}"]`)) return resolve();
+        const s = document.createElement('script');
+        s.src = src;
+        s.defer = true;
+        s.onload = () => resolve();
+        s.onerror = () => reject(new Error('Failed to load ' + src));
+        document.body.appendChild(s);
+    });
+}
+
+function loadPageSpecificScripts() {
+    const pageId = document.body.id;
+    const map = {
+        'productsPage': ['assets/js/products.js'],
+        'productDetailsPage': ['assets/js/products.js'],
+        'categoriesPage': ['assets/js/products.js'],
+        'cartPage': ['assets/js/cart.js'],
+        'checkoutPage': ['assets/js/checkout.js'],
+        'searchPage': ['assets/js/search.js'],
+        'contactPage': ['assets/js/contact.js'],
+        'loginPage': ['assets/js/auth.js'],
+        'registerPage': ['assets/js/auth.js'],
+        'profilePage': ['assets/js/auth.js'],
+        'securityPage': ['assets/js/security.js','assets/js/auth.js'],
+        'orderConfirmationPage': ['assets/js/order-confirmation.js','assets/js/auth.js']
+    };
+    const list = map[pageId] || [];
+    if (!list.length) return Promise.resolve();
+    return Promise.all(list.map(loadPageScript)).catch(err => console.warn('Page script load error', err));
 }
 
 function initNavToggle() {

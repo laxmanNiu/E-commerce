@@ -10,4 +10,18 @@ This is a static e-commerce demo website created with HTML, CSS, and JavaScript.
 
 ## Run locally
 
-Open any `*.html` file from the `E-Commerce-Website` folder in your browser, or serve the folder with a local web server for full component loading support.
+You should run the site from a local web server so component fragments load correctly.
+
+From the `E-Commerce-Website` folder:
+
+```bash
+npm start
+```
+
+Then open `http://localhost:8000` in your browser.
+
+If you prefer, you can also run the built-in Node server directly:
+
+```bash
+node assets/js/local-server.js
+```

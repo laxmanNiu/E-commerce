@@ -1,6 +1,7 @@
 .hero-section {
     min-height: 60vh;
-    background: linear-gradient(135deg, #111827, #4f46e5);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    /* Updated background color */
     color: #fff;
     display: flex;
     align-items: center;
@@ -45,7 +46,8 @@
 .slide h1 {
     font-size: 3rem;
     line-height: 1.05;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    /* Increased margin for better spacing */
 }
 
 .slide p {

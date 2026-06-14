@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com https://images.pexels.com; connect-src 'self';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body id="profilePage">
+    <div id="navbar-placeholder"></div>
+    <main class="page-content">
+        <section class="profile-section">
+            <div class="profile-details">
+                <h2>My Profile</h2>
+                <p><strong>Name:</strong> <span id="profileName"></span></p>
+                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                <p><strong>Registered:</strong> <span id="profileRegistered"></span></p>
+            </div>
+            <div class="profile-orders">
+                <h2>Order History</h2>
+                <div id="orderHistory"></div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <div id="scroll-top-placeholder"></div>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
