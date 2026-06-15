@@ -1,40 +1,105 @@
-@media (max-width:680px) {
-    main.page-content {
-        padding: 14px 14px;
+/* =========================
+   TABLETS (<= 992px)
+========================= */
+@media (max-width: 992px) {
+
+    .container {
+        width: 95%;
     }
 
-    header.site-header {
-        flex-wrap: wrap;
-    }
-
-    nav.main-nav {
-        width: 100%;
-    }
-
-    .site-header .logo {
-        width: 100%;
-        margin-bottom: 12px;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    nav.main-nav.open {
-        position: static;
-    }
-
-    .section-header {
+    .hero-content {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
     }
 
     .product-grid {
         grid-template-columns: 1fr;
     }
 
-    .categories-section .category-grid,
-    .features-section {
+    .categories-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container,
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 }

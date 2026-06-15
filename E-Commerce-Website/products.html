@@ -28,14 +28,48 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label>Price Range</label>
-                    <input type="range" id="priceRange" min="10" max="500" value="500">
-                    <span id="priceValue">$500</span>
+                    <label>Seller</label>
+                    <select id="sellerFilter">
+                        <option value="all">All Sellers</option>
+                    </select>
                 </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <input type="range" id="priceRange" min="10" max="2000000" value="2000000">
+                    <span id="priceValue">$2000000</span>
+                </div>
+                <div class="filter-group">
+                    <label>Minimum Rating</label>
+                    <select id="ratingFilter">
+                        <option value="0">Any Rating</option>
+                        <option value="4.5">4.5 and up</option>
+                        <option value="4">4.0 and up</option>
+                    </select>
+                </div>
+                <button type="button" class="filter-reset" id="clearFilters">Clear filters</button>
             </aside>
             <section class="products-grid-section">
-                <div class="section-header">
-                    <h2>All Products</h2>
+                <div class="browse-toolbar">
+                    <div>
+                        <span class="toolbar-kicker">ShopEase Marketplace</span>
+                        <h2>All Products</h2>
+                    </div>
+                    <form class="product-search" id="productSearchForm">
+                        <input type="search" id="productSearch" placeholder="Search products, categories, sellers..."
+                            autocomplete="off">
+                        <button type="submit" class="button">Search</button>
+                    </form>
+                </div>
+                <div class="market-controls">
+                    <p id="resultsStatus">Showing all products</p>
+                    <label class="sort-control">Sort by
+                        <select id="sortFilter">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating-high">Customer Rating</option>
+                        </select>
+                    </label>
                 </div>
                 <div class="product-grid" id="productList"></div>
             </section>

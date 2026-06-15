@@ -113,7 +113,8 @@ async function loadFeaturedProducts() {
 }
 
 function productCard(product) {
-    return `<article class="product-card"><img src="${product.image}" alt="${product.name}"><div class="badge">${product.category}</div><h4>${product.name}</h4><p class="price">$${product.price.toFixed(2)}</p><div class="rating">${'★'.repeat(Math.round(product.rating))}</div><a class="button" href="product-details.html?id=${product.id}">View</a></article>`;
+    const stars = '&#9733;'.repeat(Math.round(product.rating));
+    return `<article class="product-card"><img src="${product.image}" alt="${product.name}"><div class="card-meta"><span class="badge">${product.category}</span><span class="seller">Sold by ${product.seller || 'ShopEase'}</span></div><h4>${product.name}</h4><p class="price">$${product.price.toFixed(2)}</p><div class="rating" aria-label="${product.rating} out of 5 stars">${stars} <span>${product.rating}</span></div><p class="delivery">${product.delivery || 'Fast delivery available'}</p><a class="button" href="product-details.html?id=${product.id}">View details</a></article>`;
 }
 
 function getCartCount() {
