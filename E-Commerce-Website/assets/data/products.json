@@ -158,5 +158,165 @@
             "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1200&q=80"
         ],
         "description": "Durable canvas backpack with padded shoulder straps, laptop compartment, and everyday storage pockets."
+    },
+    {
+        "id": 11,
+        "name": "Smart Home Assistant Speaker",
+        "category": "electronics",
+        "seller": "EchoWave",
+        "delivery": "Free delivery by Thursday",
+        "price": 129.99,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512446733611-9099a758e1d4?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1526406915899-ff6a2f7ad634?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Voice-controlled smart speaker with premium audio, built-in assistant, and smart home integration."
+    },
+    {
+        "id": 12,
+        "name": "Premium Cashmere Sweater",
+        "category": "fashion",
+        "seller": "Luxe Knit",
+        "delivery": "Ships in 2 days",
+        "price": 159.99,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Ultra-soft cashmere sweater with a relaxed fit, perfect for layering through the season."
+    },
+    {
+        "id": 13,
+        "name": "Trail-Ready Running Sneakers",
+        "category": "shoes",
+        "seller": "PeakStride",
+        "delivery": "Free delivery tomorrow",
+        "price": 119.99,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1528701800489-20da3f5f285e?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1528701800489-20da3f5f285e?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1508264165352-258a6cd9de9f?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Durable trail running shoes with grippy soles, breathable mesh, and reliable all-weather support."
+    },
+    {
+        "id": 14,
+        "name": "Travel Crossbody Bag",
+        "category": "accessories",
+        "seller": "WanderPack",
+        "delivery": "Ships today",
+        "price": 54.99,
+        "rating": 4.4,
+        "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Compact crossbody bag with zipper compartments, adjustable strap, and everyday travel-ready styling."
+    },
+    {
+        "id": 15,
+        "name": "Wireless Gaming Mouse",
+        "category": "electronics",
+        "seller": "GameCraft",
+        "delivery": "Free delivery by Wednesday",
+        "price": 69.99,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1519202458813-1c0c7b1a74a2?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "High-performance wireless mouse with programmable buttons, RGB lighting, and precision tracking."
+    },
+    {
+        "id": 16,
+        "name": "Women’s Knit Cardigan",
+        "category": "fashion",
+        "seller": "CozyCorner",
+        "delivery": "Ships in 1 day",
+        "price": 89.99,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1520962919059-1890af0d9bbf?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Soft knit cardigan with open front and feminine silhouette, ideal for layering over day or night outfits."
+    },
+    {
+        "id": 17,
+        "name": "Outdoor Adventure Backpack",
+        "category": "accessories",
+        "seller": "TrailReady",
+        "delivery": "Free delivery in 3 days",
+        "price": 99.99,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1516569421652-9bba3b3bfc6e?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Rugged backpack with padded straps, multiple compartments, and water-resistant fabric for outdoor excursions."
+    },
+    {
+        "id": 18,
+        "name": "Noise-Isolating Earbuds",
+        "category": "electronics",
+        "seller": "SoundCore",
+        "delivery": "Fast delivery available",
+        "price": 59.99,
+        "rating": 4.4,
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Comfort-fit earbuds with passive noise isolation, crisp audio, and an ergonomic charging case."
+    },
+    {
+        "id": 19,
+        "name": "Classic Chelsea Boots",
+        "category": "shoes",
+        "seller": "UrbanSol",
+        "delivery": "Ships in 2 days",
+        "price": 139.99,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1515548211039-03d9c49c85f0?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1515548211039-03d9c49c85f0?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Premium leather Chelsea boots with cushioned insole and durable sole for weekend or office wear."
+    },
+    {
+        "id": 20,
+        "name": "Minimalist Stainless Steel Watch",
+        "category": "accessories",
+        "seller": "Timekeeper",
+        "delivery": "Free delivery by Friday",
+        "price": 129.99,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1509474520651-4b237eaa6f8e?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Elegant stainless steel watch with a minimalist face and interchangeable band for everyday polish."
     }
 ]
