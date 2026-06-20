@@ -3,31 +3,286 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com https://images.pexels.com; connect-src 'self';">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Security Inspection</title>
+
+    <title>Security Dashboard | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/security.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="securityPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="security-section">
-            <h2>Security Inspection</h2>
-            <p>Review the current site health checks below. This page reports any obvious deviations from expected
-                behavior.</p>
-            <div id="securityReport" class="security-grid"></div>
+
+        <!-- Hero Section -->
+
+        <section class="security-hero">
+
+            <div class="container">
+
+                <span class="security-tag">
+                    ShopEase Security Center
+                </span>
+
+                <h1>
+                    Security Inspection Dashboard
+                </h1>
+
+                <p>
+                    Monitor security status, system health,
+                    authentication controls, and compliance
+                    checks across the ShopEase platform.
+                </p>
+
+            </div>
+
         </section>
+
+        <!-- Security Stats -->
+
+        <section class="security-stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>Security Score</h3>
+
+                    <span id="securityScore">
+                        98%
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3>Checks Passed</h3>
+
+                    <span id="checksPassed">
+                        0
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3>Warnings</h3>
+
+                    <span id="warningCount">
+                        0
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3>Last Scan</h3>
+
+                    <span id="lastScan">
+                        Just Now
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Security Report -->
+
+        <section class="security-report-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Security Report
+                    </h2>
+
+                    <button
+                        class="button"
+                        id="runSecurityScan">
+
+                        Run New Scan
+
+                    </button>
+
+                </div>
+
+                <div
+                    id="securityReport"
+                    class="security-grid">
+
+                    <!-- security.js injects cards -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Security Features -->
+
+        <section class="security-features">
+
+            <div class="container">
+
+                <h2>
+                    Security Controls
+                </h2>
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <h3>🔒 Authentication</h3>
+
+                        <p>
+                            User login and account
+                            protection checks.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>🛡️ CSP Protection</h3>
+
+                        <p>
+                            Content Security Policy
+                            validation and monitoring.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>🔑 Session Security</h3>
+
+                        <p>
+                            Session integrity and
+                            authentication review.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>📋 Audit Logs</h3>
+
+                        <p>
+                            System activity and
+                            security audit tracking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Compliance Section -->
+
+        <section class="compliance-section">
+
+            <div class="container">
+
+                <h2>
+                    Compliance Checklist
+                </h2>
+
+                <div class="compliance-grid">
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            HTTPS Ready
+                        </p>
+
+                    </div>
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            CSP Configured
+                        </p>
+
+                    </div>
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            Input Validation
+                        </p>
+
+                    </div>
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            Secure Authentication
+                        </p>
+
+                    </div>
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            Session Protection
+                        </p>
+
+                    </div>
+
+                    <div class="compliance-card">
+
+                        <span>✅</span>
+
+                        <p>
+                            Data Integrity Checks
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/auth.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/security.js"></script>
+
 </body>
 
 </html>

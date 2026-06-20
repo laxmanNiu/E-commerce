@@ -1,87 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Home</title>
+    <title>ShopEase | Modern Shopping Experience</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="home">
+
+    <!-- Navbar -->
     <div id="navbar-placeholder"></div>
-    <main class="page-content">
+
+    <main>
+
+        <!-- Hero Section -->
         <section class="hero-section">
-            <div class="hero-slider" id="heroSlider">
-                <article class="slide active">
-                    <div>
-                        <span>New Arrivals</span>
-                        <h1>Upgrade your lifestyle with premium picks</h1>
-                        <p>Discover exclusive deals across electronics, fashion, and accessories.</p>
-                        <a href="products.html" class="button">Shop Now</a>
+
+            <div class="hero-slider">
+
+                <div class="hero-slide active">
+                    <img src="assets/images/banners/banner1.jpg" alt="Banner 1">
+
+                    <div class="hero-content">
+                        <span>New Collection 2026</span>
+
+                        <h1>
+                            Discover Premium Products
+                        </h1>
+
+                        <p>
+                            Shop electronics, fashion,
+                            shoes and accessories at the
+                            best prices.
+                        </p>
+
+                        <a href="products.html" class="btn-primary">
+                            Shop Now
+                        </a>
                     </div>
-                </article>
-                <article class="slide">
-                    <div>
-                        <span>Spring Sale</span>
-                        <h1>Save big on trending products</h1>
-                        <p>Limited-time offers on top-rated gadgets and style essentials.</p>
-                        <a href="products.html" class="button">Browse Collection</a>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="assets/images/banners/banner2.jpg" alt="Banner 2">
+
+                    <div class="hero-content">
+                        <span>Special Sale</span>
+
+                        <h1>
+                            Up To 50% Off
+                        </h1>
+
+                        <p>
+                            Limited time deals on trending products.
+                        </p>
+
+                        <a href="products.html" class="btn-primary">
+                            Explore Deals
+                        </a>
                     </div>
-                </article>
-                <article class="slide">
-                    <div>
-                        <span>Fast Delivery</span>
-                        <h1>Shop now, get it delivered fast</h1>
-                        <p>Enjoy free shipping and simple returns on every order.</p>
-                        <a href="products.html" class="button">Explore Products</a>
-                    </div>
-                </article>
+                </div>
+
             </div>
+
         </section>
-        <section class="categories-section">
-            <h2>Shop By Category</h2>
+
+        <!-- Categories -->
+        <section class="categories">
+
+            <div class="section-title">
+                <h2>Shop By Category</h2>
+                <p>Browse popular categories</p>
+            </div>
+
             <div class="category-grid">
-                <a href="categories.html#electronics" class="category-card">Electronics</a>
-                <a href="categories.html#fashion" class="category-card">Fashion</a>
-                <a href="categories.html#shoes" class="category-card">Shoes</a>
-                <a href="categories.html#accessories" class="category-card">Accessories</a>
+
+                <a href="categories.html#electronics" class="category-card">
+                    <img src="assets/images/categories/electronics.jpg" alt="">
+                    <h3>Electronics</h3>
+                </a>
+
+                <a href="categories.html#fashion" class="category-card">
+                    <img src="assets/images/categories/fashion.jpg" alt="">
+                    <h3>Fashion</h3>
+                </a>
+
+                <a href="categories.html#shoes" class="category-card">
+                    <img src="assets/images/categories/shoes.jpg" alt="">
+                    <h3>Shoes</h3>
+                </a>
+
+                <a href="categories.html#accessories" class="category-card">
+                    <img src="assets/images/categories/accessories.jpg" alt="">
+                    <h3>Accessories</h3>
+                </a>
+
             </div>
+
         </section>
-        <section class="products-section">
-            <div class="section-header">
-                <h2>Latest Products</h2>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+
+            <div class="section-title">
+                <h2>Featured Products</h2>
                 <a href="products.html">View All</a>
             </div>
-            <div class="product-grid" id="featuredProducts"></div>
+
+            <div id="featuredProducts" class="product-grid">
+            </div>
+
         </section>
-        <section class="features-section">
-            <article>
-                <h3>Free Shipping</h3>
-                <p>On all orders over $50.</p>
-            </article>
-            <article>
-                <h3>Easy Returns</h3>
-                <p>30-day hassle-free returns.</p>
-            </article>
-            <article>
-                <h3>Secure Payment</h3>
-                <p>Trusted checkout with payment security.</p>
-            </article>
-            <article>
-                <h3>24/7 Support</h3>
-                <p>Help, whenever you need it.</p>
-            </article>
+
+        <!-- Why Choose Us -->
+        <section class="why-us">
+
+            <div class="feature-box">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Nationwide shipping within days.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>💳 Secure Payment</h3>
+                <p>100% secure checkout experience.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🔄 Easy Returns</h3>
+                <p>Hassle-free return policy.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>⭐ Top Rated</h3>
+                <p>Trusted by thousands of customers.</p>
+            </div>
+
         </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+
+            <h2>Subscribe To Newsletter</h2>
+
+            <p>
+                Get notified about new arrivals and discounts.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
+
     </main>
+
+    <!-- Footer -->
     <div id="footer-placeholder"></div>
+
+    <!-- Scroll Top -->
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+
 </body>
 
 </html>

@@ -1,55 +1,256 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Contact</title>
+    <title>Contact Us | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="contactPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
+
+        <!-- Hero Section -->
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <h1>Get In Touch</h1>
+
+                <p>
+                    We're here to help. Reach out with any
+                    questions, feedback, or support requests.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Grid -->
         <section class="contact-section">
-            <div class="contact-grid">
+
+            <div class="container contact-grid">
+
+                <!-- Contact Information -->
                 <div class="contact-info">
-                    <h2>Contact Info</h2>
-                    <div class="contact-card">
-                        <h3>Email</h3>
+
+                    <h2>Contact Information</h2>
+
+                    <div class="info-card">
+                        <h3>📧 Email</h3>
                         <p>support@shopease.com</p>
                     </div>
-                    <div class="contact-card">
-                        <h3>Phone</h3>
-                        <p>+1 (555) 012-3456</p>
+
+                    <div class="info-card">
+                        <h3>📞 Phone</h3>
+                        <p>+91 98765 43210</p>
                     </div>
-                    <div class="contact-card">
-                        <h3>Address</h3>
-                        <p>123 Market Street, Suite 400, Example City</p>
+
+                    <div class="info-card">
+                        <h3>📍 Address</h3>
+                        <p>
+                            ShopEase Headquarters,
+                            New Delhi, India
+                        </p>
                     </div>
+
+                    <div class="info-card">
+                        <h3>🕒 Business Hours</h3>
+                        <p>Monday - Saturday</p>
+                        <p>9:00 AM - 8:00 PM</p>
+                    </div>
+
                 </div>
-                <div class="contact-form-card">
-                    <h2>Send a Message</h2>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+
+                    <h2>Send Us A Message</h2>
+
                     <form id="contactForm">
-                        <label>Name<input type="text" id="contactName" required></label>
-                        <label>Email<input type="email" id="contactEmail" required></label>
-                        <label>Subject<input type="text" id="contactSubject" required></label>
-                        <label>Message<textarea id="contactMessage" rows="5" required></textarea></label>
-                        <button type="submit" class="button">Send Message</button>
-                        <p id="contactError" class="error-message"></p>
-                        <p id="contactSuccess" class="success-message"></p>
+
+                        <div class="form-group">
+                            <label for="contactName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="contactMessage"
+                                rows="6"
+                                required>
+                            </textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="button">
+
+                            Send Message
+
+                        </button>
+
+                        <p
+                            id="contactError"
+                            class="error-message">
+                        </p>
+
+                        <p
+                            id="contactSuccess"
+                            class="success-message">
+                        </p>
+
                     </form>
+
                 </div>
+
             </div>
+
         </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+
+            <div class="container">
+
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-grid">
+
+                    <article class="faq-card">
+
+                        <h3>
+                            How long does delivery take?
+                        </h3>
+
+                        <p>
+                            Most orders are delivered within
+                            3–7 business days.
+                        </p>
+
+                    </article>
+
+                    <article class="faq-card">
+
+                        <h3>
+                            Can I return a product?
+                        </h3>
+
+                        <p>
+                            Yes, we offer a hassle-free
+                            return policy within 30 days.
+                        </p>
+
+                    </article>
+
+                    <article class="faq-card">
+
+                        <h3>
+                            What payment methods are accepted?
+                        </h3>
+
+                        <p>
+                            UPI, Debit Cards, Credit Cards,
+                            and Cash on Delivery.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+
+            <div class="container">
+
+                <h2>Our Location</h2>
+
+                <div class="map-placeholder">
+
+                    <img
+                        src="assets/images/contact/map-placeholder.jpg"
+                        alt="Map Location">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Social Media -->
+        <section class="social-section">
+
+            <div class="container">
+
+                <h2>Follow Us</h2>
+
+                <div class="social-links">
+
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
+
 </body>
 
 </html>
+

@@ -1,41 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com https://images.pexels.com; connect-src 'self';">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Register</title>
+
+    <title>Create Account | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="registerPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="auth-section">
-            <div class="auth-card">
-                <h2>Create Your Account</h2>
-                <p>Register once to save orders, manage your profile, and checkout faster.</p>
-                <form id="registerForm">
-                    <label>Name<input type="text" id="registerName" required></label>
-                    <label>Email<input type="email" id="registerEmail" required></label>
-                    <label>Password<input type="password" id="registerPassword" required></label>
-                    <label>Confirm Password<input type="password" id="registerConfirmPassword" required></label>
-                    <button type="submit" class="button">Register</button>
-                    <p id="authMessage" class="error-message"></p>
-                </form>
-                <p class="auth-note">Already registered? <a href="login.html">Login instead</a>.</p>
+
+        <section class="auth-layout">
+
+            <!-- Left Side Branding -->
+
+            <div class="auth-banner">
+
+                <div class="auth-banner-content">
+
+                    <span class="auth-tag">
+                        Join ShopEase
+                    </span>
+
+                    <h1>Create Your Account</h1>
+
+                    <p>
+                        Register today and enjoy faster
+                        checkout, order tracking, wishlist
+                        management, and exclusive member offers.
+                    </p>
+
+                    <div class="auth-features">
+
+                        <div class="feature-item">
+                            <span>✓</span>
+                            <p>Track Orders Easily</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <span>✓</span>
+                            <p>Save Favorite Products</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <span>✓</span>
+                            <p>Exclusive Member Discounts</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <span>✓</span>
+                            <p>Secure Shopping Experience</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+            <!-- Registration Form -->
+
+            <div class="auth-card">
+
+                <div class="auth-header">
+
+                    <h2>Create Account</h2>
+
+                    <p>
+                        Start your shopping journey with ShopEase.
+                    </p>
+
+                </div>
+
+                <form id="registerForm">
+
+                    <div class="form-group">
+
+                        <label for="registerName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create a password"
+                            required>
+
+                    </div>
+
+                    <div class="password-strength">
+
+                        <div class="strength-bar"></div>
+
+                        <small>
+                            Use at least 8 characters,
+                            including numbers and symbols.
+                        </small>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="registerConfirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerConfirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+
+                    </div>
+
+                    <div class="terms-check">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                required>
+
+                            I agree to the Terms &
+                            Conditions and Privacy Policy.
+
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="button auth-btn">
+
+                        Create Account
+
+                    </button>
+
+                    <p
+                        id="authMessage"
+                        class="error-message">
+                    </p>
+
+                </form>
+
+                <div class="security-info">
+
+                    <h3>Why Create an Account?</h3>
+
+                    <ul>
+
+                        <li>
+                            Faster future checkouts
+                        </li>
+
+                        <li>
+                            Access order history
+                        </li>
+
+                        <li>
+                            Save products to wishlist
+                        </li>
+
+                        <li>
+                            Receive exclusive offers
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="auth-footer">
+
+                    <p>
+                        Already have an account?
+                    </p>
+
+                    <a
+                        href="login.html"
+                        class="auth-link">
+
+                        Login Here
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/auth.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
+

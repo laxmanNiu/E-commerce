@@ -1,34 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Search</title>
+
+    <title>Search Products | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/search.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="searchPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="search-section">
-            <h2>Search Products</h2>
-            <p class="search-note">Start typing to see live product results.</p>
-            <div class="search-bar">
-                <input type="search" id="searchInput" placeholder="Search for products...">
-                <button id="searchBtn" class="button">Search</button>
+
+        <!-- Hero -->
+
+        <section class="search-hero">
+
+            <div class="container">
+
+                <span class="search-tag">
+                    ShopEase Smart Search
+                </span>
+
+                <h1>Find Exactly What You Need</h1>
+
+                <p>
+                    Search across electronics, fashion,
+                    accessories, and more.
+                </p>
+
             </div>
-            <p id="searchStatus" class="search-status">Type any keyword to begin.</p>
-            <div class="product-grid" id="searchResults"></div>
+
         </section>
+
+        <!-- Search Area -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-card">
+
+                    <div class="search-bar">
+
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Search products, brands, categories...">
+
+                        <button
+                            id="searchBtn"
+                            class="button">
+
+                            Search
+
+                        </button>
+
+                    </div>
+
+                    <!-- Search Suggestions -->
+
+                    <div
+                        class="search-suggestions"
+                        id="searchSuggestions">
+
+                        <button class="suggestion-chip">
+                            Headphones
+                        </button>
+
+                        <button class="suggestion-chip">
+                            Smartwatch
+                        </button>
+
+                        <button class="suggestion-chip">
+                            Sneakers
+                        </button>
+
+                        <button class="suggestion-chip">
+                            Laptop
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Search Status -->
+
+                <div class="search-meta">
+
+                    <p
+                        id="searchStatus"
+                        class="search-status">
+
+                        Start typing to discover products.
+
+                    </p>
+
+                    <span
+                        id="resultsCount"
+                        class="results-count">
+
+                        0 Results
+
+                    </span>
+
+                </div>
+
+                <!-- Results -->
+
+                <div
+                    class="product-grid"
+                    id="searchResults">
+
+                </div>
+
+                <!-- Empty State -->
+
+                <div
+                    class="empty-search-state"
+                    id="emptyState">
+
+                    <div class="empty-icon">
+
+                        🔍
+
+                    </div>
+
+                    <h3>
+                        Search Products
+                    </h3>
+
+                    <p>
+                        Try searching for products,
+                        brands, or categories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Trending Searches -->
+
+        <section class="trending-searches">
+
+            <div class="container">
+
+                <h2>
+                    Trending Searches
+                </h2>
+
+                <div class="trending-grid">
+
+                    <div class="trend-card">
+                        Smart Watches
+                    </div>
+
+                    <div class="trend-card">
+                        Wireless Earbuds
+                    </div>
+
+                    <div class="trend-card">
+                        Running Shoes
+                    </div>
+
+                    <div class="trend-card">
+                        Gaming Accessories
+                    </div>
+
+                    <div class="trend-card">
+                        Laptops
+                    </div>
+
+                    <div class="trend-card">
+                        Fashion Deals
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Benefits -->
+
+        <section class="search-benefits">
+
+            <div class="container benefits-grid">
+
+                <div class="benefit-card">
+
+                    <h3>⚡ Fast Search</h3>
+
+                    <p>
+                        Instant product discovery.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>🎯 Smart Results</h3>
+
+                    <p>
+                        Relevant recommendations.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>⭐ Top Products</h3>
+
+                    <p>
+                        Popular customer choices.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/search.js"></script>
+
 </body>
 
 </html>

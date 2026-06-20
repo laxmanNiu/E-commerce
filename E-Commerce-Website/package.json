@@ -1,13 +1,52 @@
+
 {
-    "name": "shopease-ecommerce-site",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Static e-commerce demo site for ShopEase with local Node server support.",
-    "main": "assets/js/local-server.js",
-    "scripts": {
-        "start": "node assets/js/local-server.js"
-    },
-    "engines": {
-        "node": ">=18"
-    }
+  "name": "shopease-v2",
+  "version": "2.0.0",
+  "private": true,
+
+  "description": "ShopEase V2 - Modern E-Commerce Frontend Project featuring authentication, product catalog, cart management, checkout flow, order tracking, analytics dashboard, and responsive UI.",
+
+  "author": "Laxman",
+
+  "license": "MIT",
+
+  "main": "assets/js/local-server.js",
+
+  "scripts": {
+    "start": "node assets/js/local-server.js",
+    "dev": "node assets/js/local-server.js",
+    "serve": "node assets/js/local-server.js",
+    "version": "node -e \"console.log('ShopEase V2')\""
+  },
+
+  "keywords": [
+    "ecommerce",
+    "shopping-cart",
+    "frontend",
+    "javascript",
+    "html",
+    "css",
+    "responsive-design",
+    "web-development",
+    "shop",
+    "portfolio-project",
+    "resume-project",
+    "shopease"
+  ],
+
+  "engines": {
+    "node": ">=18.0.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laxmanNiu/E-commerce.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/laxmanNiu/E-commerce/issues"
+  },
+
+  "homepage": "https://github.com/laxmanNiu/E-commerce#readme"
 }
+

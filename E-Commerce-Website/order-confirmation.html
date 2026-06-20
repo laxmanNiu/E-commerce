@@ -1,37 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Order Confirmation</title>
+
+    <title>Order Confirmation | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/order-confirmation.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="orderConfirmationPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="confirmation-section">
-            <div class="confirmation-panel">
-                <div class="status-icon">✓</div>
-                <div class="confirmation-copy">
-                    <h2>Thank you for your order!</h2>
-                    <p>Your order has been placed successfully. We will email you the tracking details shortly.</p>
-                    <p class="order-meta">Order <strong id="orderNumber">#ORD00000</strong></p>
-                    <p class="order-meta">Status: <strong id="orderStatus">Confirmed</strong></p>
+
+        <!-- Success Hero -->
+
+        <section class="confirmation-hero">
+
+            <div class="container">
+
+                <div class="success-icon">
+                    ✓
                 </div>
+
+                <h1>Order Placed Successfully</h1>
+
+                <p>
+                    Thank you for shopping with ShopEase.
+                    Your order has been confirmed and is
+                    being prepared for shipment.
+                </p>
+
+                <div class="order-badge">
+
+                    Order Number:
+                    <strong id="orderNumber">
+                        #ORD00000
+                    </strong>
+
+                </div>
+
             </div>
-            <div id="confirmationSummary"></div>
-            <a href="index.html" class="button">Continue Shopping</a>
+
         </section>
+
+        <!-- Main Content -->
+
+        <section class="confirmation-content">
+
+            <div class="container confirmation-grid">
+
+                <!-- Left Side -->
+
+                <div class="confirmation-details">
+
+                    <div class="info-card">
+
+                        <h2>Order Status</h2>
+
+                        <div class="status-badge">
+                            <span id="orderStatus">
+                                Confirmed
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h2>Tracking Progress</h2>
+
+                        <div class="tracking-timeline">
+
+                            <div class="timeline-step active">
+                                Order Confirmed
+                            </div>
+
+                            <div class="timeline-step">
+                                Packed
+                            </div>
+
+                            <div class="timeline-step">
+                                Shipped
+                            </div>
+
+                            <div class="timeline-step">
+                                Delivered
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h2>Estimated Delivery</h2>
+
+                        <p>
+                            3 - 7 Business Days
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h2>Need Help?</h2>
+
+                        <p>
+                            Contact our support team for
+                            order updates and assistance.
+                        </p>
+
+                        <a
+                            href="contact.html"
+                            class="button secondary-btn">
+
+                            Contact Support
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="confirmation-sidebar">
+
+                    <div class="summary-card">
+
+                        <h2>Order Summary</h2>
+
+                        <div id="confirmationSummary">
+
+                            <!-- JS Injected Content -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Action Buttons -->
+
+        <section class="confirmation-actions">
+
+            <div class="container">
+
+                <a
+                    href="products.html"
+                    class="button">
+
+                    Continue Shopping
+
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="button secondary-btn">
+
+                    View Orders
+
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/order-confirmation.js"></script>
+
 </body>
 
 </html>
+

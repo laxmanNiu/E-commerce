@@ -1,38 +1,286 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com https://images.pexels.com; connect-src 'self';">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Profile</title>
+
+    <title>My Profile | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="profilePage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="profile-section">
-            <div class="profile-details">
-                <h2>My Profile</h2>
-                <p><strong>Name:</strong> <span id="profileName"></span></p>
-                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
-                <p><strong>Registered:</strong> <span id="profileRegistered"></span></p>
+
+        <!-- Dashboard Hero -->
+
+        <section class="profile-hero">
+
+            <div class="container">
+
+                <h1>My Account</h1>
+
+                <p>
+                    Manage your profile, orders,
+                    wishlist, and account settings.
+                </p>
+
             </div>
-            <div class="profile-orders">
-                <h2>Order History</h2>
-                <div id="orderHistory"></div>
-            </div>
+
         </section>
+
+        <!-- Dashboard Layout -->
+
+        <section class="profile-dashboard">
+
+            <div class="container profile-grid">
+
+                <!-- Sidebar -->
+
+                <aside class="profile-sidebar">
+
+                    <div class="profile-card">
+
+                        <div class="profile-avatar">
+
+                            <span>
+                                👤
+                            </span>
+
+                        </div>
+
+                        <h2 id="profileName">
+                            Customer Name
+                        </h2>
+
+                        <p id="profileEmail">
+                            customer@email.com
+                        </p>
+
+                        <p class="member-since">
+
+                            Member Since:
+                            <span id="profileRegistered"></span>
+
+                        </p>
+
+                    </div>
+
+                    <div class="quick-links">
+
+                        <a href="#orders">
+                            My Orders
+                        </a>
+
+                        <a href="#wishlist">
+                            Wishlist
+                        </a>
+
+                        <a href="#addresses">
+                            Addresses
+                        </a>
+
+                        <a href="#settings">
+                            Settings
+                        </a>
+
+                    </div>
+
+                </aside>
+
+                <!-- Main Content -->
+
+                <div class="profile-content">
+
+                    <!-- Stats -->
+
+                    <section class="stats-grid">
+
+                        <div class="stat-card">
+
+                            <h3>Total Orders</h3>
+
+                            <span id="totalOrders">
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <h3>Wishlist Items</h3>
+
+                            <span id="wishlistCount">
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <h3>Active Orders</h3>
+
+                            <span id="activeOrders">
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <h3>Reward Points</h3>
+
+                            <span id="rewardPoints">
+                                250
+                            </span>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Orders -->
+
+                    <section
+                        class="dashboard-card"
+                        id="orders">
+
+                        <div class="section-header">
+
+                            <h2>
+                                Order History
+                            </h2>
+
+                            <a
+                                href="order-confirmation.html">
+
+                                View Latest
+
+                            </a>
+
+                        </div>
+
+                        <div id="orderHistory">
+
+                            <!-- JS Injected Orders -->
+
+                        </div>
+
+                    </section>
+
+                    <!-- Wishlist -->
+
+                    <section
+                        class="dashboard-card"
+                        id="wishlist">
+
+                        <div class="section-header">
+
+                            <h2>
+                                Wishlist
+                            </h2>
+
+                        </div>
+
+                        <div class="empty-state">
+
+                            <p>
+                                No items in wishlist.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Address Book -->
+
+                    <section
+                        class="dashboard-card"
+                        id="addresses">
+
+                        <div class="section-header">
+
+                            <h2>
+                                Saved Addresses
+                            </h2>
+
+                        </div>
+
+                        <div class="address-card">
+
+                            <h3>
+                                Default Address
+                            </h3>
+
+                            <p>
+                                No address saved yet.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Settings -->
+
+                    <section
+                        class="dashboard-card"
+                        id="settings">
+
+                        <div class="section-header">
+
+                            <h2>
+                                Account Settings
+                            </h2>
+
+                        </div>
+
+                        <div class="settings-links">
+
+                            <a href="#">
+                                Change Password
+                            </a>
+
+                            <a href="#">
+                                Notification Preferences
+                            </a>
+
+                            <a href="#">
+                                Privacy Settings
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/auth.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
+

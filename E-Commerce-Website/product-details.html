@@ -1,43 +1,267 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Product Details</title>
+
+    <title>Product Details | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/product-details.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="productDetailsPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="product-details">
-            <div class="details-left">
-                <img id="detailImage" alt="Product Image">
-                <div class="thumbnail-row" id="detailThumbnails"></div>
+
+        <!-- Breadcrumb -->
+
+        <section class="breadcrumb-section">
+
+            <div class="container">
+
+                <a href="index.html">Home</a>
+
+                <span>›</span>
+
+                <a href="products.html">Products</a>
+
+                <span>›</span>
+
+                <span id="breadcrumbProduct">
+                    Product
+                </span>
+
             </div>
-            <div class="details-right">
-                <h1 id="detailTitle"></h1>
-                <p id="detailDescription"></p>
-                <div class="price-rating">
-                    <span class="price" id="detailPrice"></span>
-                    <span class="rating" id="detailRating"></span>
-                </div>
-                <button class="button" id="addToCartBtn">Add To Cart</button>
-                <div class="related-products">
-                    <h3>Related Products</h3>
-                    <div class="product-grid" id="relatedProducts"></div>
-                </div>
-            </div>
+
         </section>
+
+        <!-- Product Details -->
+
+        <section class="product-details-section">
+
+            <div class="container product-details-grid">
+
+                <!-- Product Gallery -->
+
+                <div class="product-gallery">
+
+                    <div class="main-image-wrapper">
+
+                        <img
+                            id="detailImage"
+                            alt="Product Image">
+
+                    </div>
+
+                    <div
+                        class="thumbnail-row"
+                        id="detailThumbnails">
+
+                    </div>
+
+                </div>
+
+                <!-- Product Info -->
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Premium Collection
+                    </span>
+
+                    <h1 id="detailTitle">
+                    </h1>
+
+                    <div class="rating-review">
+
+                        <span id="detailRating">
+                        </span>
+
+                        <span>
+                            (124 Reviews)
+                        </span>
+
+                    </div>
+
+                    <div class="product-price">
+
+                        <span
+                            class="current-price"
+                            id="detailPrice">
+                        </span>
+
+                        <span class="old-price">
+                            ₹4,999
+                        </span>
+
+                    </div>
+
+                    <p
+                        id="detailDescription"
+                        class="product-description">
+                    </p>
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-wrapper">
+
+                        <label>
+                            Quantity
+                        </label>
+
+                        <div class="quantity-box">
+
+                            <button
+                                type="button"
+                                id="qtyMinus">
+
+                                -
+
+                            </button>
+
+                            <input
+                                type="number"
+                                id="productQty"
+                                value="1"
+                                min="1">
+
+                            <button
+                                type="button"
+                                id="qtyPlus">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Actions -->
+
+                    <div class="product-actions">
+
+                        <button
+                            class="button"
+                            id="addToCartBtn">
+
+                            Add To Cart
+
+                        </button>
+
+                        <button
+                            class="button secondary-btn">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                    <!-- Features -->
+
+                    <div class="product-features">
+
+                        <div class="feature-item">
+                            🚚 Free Shipping
+                        </div>
+
+                        <div class="feature-item">
+                            🔄 Easy Returns
+                        </div>
+
+                        <div class="feature-item">
+                            🔒 Secure Payment
+                        </div>
+
+                        <div class="feature-item">
+                            ⭐ Premium Quality
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Product Tabs -->
+
+        <section class="product-tabs">
+
+            <div class="container">
+
+                <div class="tab-buttons">
+
+                    <button class="tab-btn active">
+                        Description
+                    </button>
+
+                    <button class="tab-btn">
+                        Specifications
+                    </button>
+
+                    <button class="tab-btn">
+                        Reviews
+                    </button>
+
+                </div>
+
+                <div class="tab-content">
+
+                    <p>
+                        This product is crafted using premium
+                        materials and designed to provide
+                        exceptional comfort, durability,
+                        and performance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Related Products -->
+
+        <section class="related-section">
+
+            <div class="container">
+
+                <h2>
+                    Related Products
+                </h2>
+
+                <div
+                    class="product-grid"
+                    id="relatedProducts">
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/products.js"></script>
+
 </body>
 
 </html>

@@ -1,84 +1,350 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Products</title>
+
+    <title>Products | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/products-v2.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="productsPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="products-page">
-            <aside class="sidebar">
-                <h3>Filters</h3>
-                <div class="filter-group">
-                    <label>Category</label>
-                    <select id="categoryFilter">
-                        <option value="all">All</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="shoes">Shoes</option>
-                        <option value="accessories">Accessories</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Seller</label>
-                    <select id="sellerFilter">
-                        <option value="all">All Sellers</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Price Range</label>
-                    <input type="range" id="priceRange" min="10" max="2000000" value="2000000">
-                    <span id="priceValue">$2000000</span>
-                </div>
-                <div class="filter-group">
-                    <label>Minimum Rating</label>
-                    <select id="ratingFilter">
-                        <option value="0">Any Rating</option>
-                        <option value="4.5">4.5 and up</option>
-                        <option value="4">4.0 and up</option>
-                    </select>
-                </div>
-                <button type="button" class="filter-reset" id="clearFilters">Clear filters</button>
-            </aside>
-            <section class="products-grid-section">
-                <div class="browse-toolbar">
-                    <div>
-                        <span class="toolbar-kicker">ShopEase Marketplace</span>
-                        <h2>All Products</h2>
-                    </div>
-                    <form class="product-search" id="productSearchForm">
-                        <input type="search" id="productSearch" placeholder="Search products, categories, sellers..."
-                            autocomplete="off">
-                        <button type="submit" class="button">Search</button>
-                    </form>
-                </div>
-                <div class="market-controls">
-                    <p id="resultsStatus">Showing all products</p>
-                    <label class="sort-control">Sort by
-                        <select id="sortFilter">
-                            <option value="featured">Featured</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                            <option value="rating-high">Customer Rating</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="product-grid" id="productList"></div>
-            </section>
+
+        <!-- Hero Section -->
+
+        <section class="products-hero">
+
+            <div class="container">
+
+                <span class="hero-tag">
+                    ShopEase Marketplace
+                </span>
+
+                <h1>
+                    Discover Amazing Products
+                </h1>
+
+                <p>
+                    Browse premium electronics, fashion,
+                    accessories, and lifestyle products
+                    selected for quality and value.
+                </p>
+
+            </div>
+
         </section>
+
+        <!-- Main Products Layout -->
+
+        <section class="products-layout">
+
+            <div class="container products-container">
+
+                <!-- Sidebar -->
+
+                <aside class="filter-sidebar">
+
+                    <div class="sidebar-card">
+
+                        <h3>Filters</h3>
+
+                        <div class="filter-group">
+
+                            <label for="categoryFilter">
+                                Category
+                            </label>
+
+                            <select id="categoryFilter">
+
+                                <option value="all">
+                                    All Categories
+                                </option>
+
+                                <option value="electronics">
+                                    Electronics
+                                </option>
+
+                                <option value="fashion">
+                                    Fashion
+                                </option>
+
+                                <option value="shoes">
+                                    Shoes
+                                </option>
+
+                                <option value="accessories">
+                                    Accessories
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <label for="sellerFilter">
+                                Seller
+                            </label>
+
+                            <select id="sellerFilter">
+
+                                <option value="all">
+                                    All Sellers
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <label>
+                                Maximum Price
+                            </label>
+
+                            <input
+                                type="range"
+                                id="priceRange"
+                                min="10"
+                                max="2000000"
+                                value="2000000">
+
+                            <span id="priceValue">
+                                ₹20,00,000
+                            </span>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <label for="ratingFilter">
+                                Minimum Rating
+                            </label>
+
+                            <select id="ratingFilter">
+
+                                <option value="0">
+                                    Any Rating
+                                </option>
+
+                                <option value="4.5">
+                                    4.5 & Up
+                                </option>
+
+                                <option value="4">
+                                    4.0 & Up
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="button filter-reset"
+                            id="clearFilters">
+
+                            Reset Filters
+
+                        </button>
+
+                    </div>
+
+                </aside>
+
+                <!-- Products Section -->
+
+                <section class="products-content">
+
+                    <!-- Search Area -->
+
+                    <div class="products-toolbar">
+
+                        <div>
+
+                            <h2>
+                                Product Collection
+                            </h2>
+
+                            <p>
+                                Explore our latest arrivals.
+                            </p>
+
+                        </div>
+
+                        <form
+                            class="product-search"
+                            id="productSearchForm">
+
+                            <input
+                                type="search"
+                                id="productSearch"
+                                placeholder="Search products...">
+
+                            <button
+                                type="submit"
+                                class="button">
+
+                                Search
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Controls -->
+
+                    <div class="market-controls">
+
+                        <div class="results-box">
+
+                            <p id="resultsStatus">
+                                Showing all products
+                            </p>
+
+                        </div>
+
+                        <label class="sort-control">
+
+                            Sort By
+
+                            <select id="sortFilter">
+
+                                <option value="featured">
+                                    Featured
+                                </option>
+
+                                <option value="price-low">
+                                    Price: Low to High
+                                </option>
+
+                                <option value="price-high">
+                                    Price: High to Low
+                                </option>
+
+                                <option value="rating-high">
+                                    Highest Rated
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                    </div>
+
+                    <!-- Featured Banner -->
+
+                    <div class="featured-banner">
+
+                        <div>
+
+                            <h3>
+                                Summer Sale 2026
+                            </h3>
+
+                            <p>
+                                Up to 50% off selected products.
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="#productList"
+                            class="button">
+
+                            Shop Now
+
+                        </a>
+
+                    </div>
+
+                    <!-- Product Grid -->
+
+                    <div
+                        class="product-grid"
+                        id="productList">
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <!-- Benefits Section -->
+
+        <section class="shopping-benefits">
+
+            <div class="container benefits-grid">
+
+                <div class="benefit-card">
+
+                    <h3>🚚 Free Shipping</h3>
+
+                    <p>
+                        On eligible orders nationwide.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>🔒 Secure Payments</h3>
+
+                    <p>
+                        Trusted and encrypted checkout.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>🔄 Easy Returns</h3>
+
+                    <p>
+                        Hassle-free return policy.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>⭐ Quality Products</h3>
+
+                    <p>
+                        Curated for customer satisfaction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/products.js"></script>
+
 </body>
 
 </html>

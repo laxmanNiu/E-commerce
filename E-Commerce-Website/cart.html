@@ -3,33 +3,173 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase | Cart</title>
+    <title>Shopping Cart | ShopEase</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body id="cartPage">
+
     <div id="navbar-placeholder"></div>
+
     <main class="page-content">
-        <section class="cart-section">
-            <h2>Your Shopping Cart</h2>
-            <div id="cartItems" class="cart-items"></div>
-            <div class="cart-summary">
-                <h3>Order Summary</h3>
-                <p>Subtotal: <span id="cartSubtotal">$0.00</span></p>
-                <p>Shipping: <span>$5.00</span></p>
-                <p>Total: <strong id="cartTotal">$0.00</strong></p>
-                <a href="checkout.html" class="button">Checkout</a>
-            </div>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Shopping Cart</h1>
+            <p>Review your selected items before checkout.</p>
         </section>
+
+        <section class="cart-container">
+
+            <!-- Cart Products -->
+            <div class="cart-left">
+
+                <div id="cartItems" class="cart-items">
+
+                    <!-- Dynamic Products Here -->
+
+                </div>
+
+                <div id="emptyCart" class="empty-cart hidden">
+
+                    <img
+                        src="assets/images/cart/empty-cart.png"
+                        alt="Empty Cart">
+
+                    <h2>Your Cart Is Empty</h2>
+
+                    <p>
+                        Looks like you haven't added
+                        anything yet.
+                    </p>
+
+                    <a href="products.html" class="button">
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Order Summary -->
+            <aside class="cart-right">
+
+                <div class="summary-card">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cartSubtotal">$0.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shippingCost">$5.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span id="discountAmount">$0.00</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <strong id="cartTotal">$0.00</strong>
+                    </div>
+
+                    <!-- Coupon -->
+                    <div class="coupon-box">
+
+                        <label for="couponInput">
+                            Coupon Code
+                        </label>
+
+                        <div class="coupon-input">
+
+                            <input
+                                type="text"
+                                id="couponInput"
+                                placeholder="Enter coupon">
+
+                            <button
+                                type="button"
+                                id="applyCoupon">
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Shipping Progress -->
+                    <div class="shipping-progress">
+
+                        <p>
+                            Add
+                            <strong>$50</strong>
+                            more for FREE shipping.
+                        </p>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                id="shippingProgress">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Checkout -->
+                    <a
+                        href="checkout.html"
+                        class="button checkout-btn">
+                        Proceed To Checkout
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="secondary-btn">
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+        <!-- Recommended Products -->
+        <section class="recommended-products">
+
+            <div class="section-header">
+
+                <h2>You May Also Like</h2>
+
+            </div>
+
+            <div
+                id="recommendedProducts"
+                class="product-grid">
+            </div>
+
+        </section>
+
     </main>
+
     <div id="footer-placeholder"></div>
+
     <div id="scroll-top-placeholder"></div>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/cart.js"></script>
+
 </body>
 
 </html>
