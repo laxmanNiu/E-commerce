@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "category": "electronics",
+    "price": 129.99
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "category": "electronics",
+    "price": 189.99
+  },
+  {
+    "id": 3,
+    "name": "Leather Jacket",
+    "category": "fashion",
+    "price": 199.99
+  }
+]
