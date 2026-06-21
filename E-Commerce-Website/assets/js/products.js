@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initProductsPage() {
     const products = await fetchProducts();
+    window.shopProducts = products;
+
+updateCartCount();
+updateWishlistCount();
     const pageId = document.body.id;
 
     if (pageId === 'productDetailsPage') {
@@ -141,7 +145,58 @@ function updateResultsStatus(count, total, filters) {
 
 function buildProductCard(product) {
     const stars = '&#9733;'.repeat(Math.round(product.rating));
-    return `<article class="product-card"><img src="${product.image}" alt="${product.name}"><div class="card-meta"><span class="badge">${product.category}</span><span class="seller">Sold by ${product.seller || 'ShopEase'}</span></div><h4>${product.name}</h4><p class="price">$${product.price.toFixed(2)}</p><div class="rating" aria-label="${product.rating} out of 5 stars">${stars} <span>${product.rating}</span></div><p class="delivery">${product.delivery || 'Fast delivery available'}</p><a class="button" href="product-details.html?id=${product.id}">View details</a></article>`;
+
+    return `
+    <article class="product-card">
+        <img
+            src="${product.image}"
+            alt="${product.name}"
+            loading="lazy"
+        >
+
+        <div class="card-meta">
+            <span class="badge">${product.category}</span>
+            <span class="seller">
+                Sold by ${product.seller || 'ShopEase'}
+            </span>
+        </div>
+
+        <h4>${product.name}</h4>
+
+        <p class="price">
+            $${product.price.toFixed(2)}
+        </p>
+
+        <div class="rating">
+            ${stars}
+            <span>${product.rating}</span>
+        </div>
+
+        <p class="delivery">
+            ${product.delivery || 'Fast delivery available'}
+        </p>
+
+        <div class="product-actions">
+            <button
+                class="btn-cart"
+                onclick="quickAddToCart(${product.id})">
+                Add To Cart
+            </button>
+
+            <button
+                class="btn-wishlist"
+                onclick="toggleWishlist(${product.id})">
+                ♥
+            </button>
+        </div>
+
+        <a
+            class="button"
+            href="product-details.html?id=${product.id}">
+            View Details
+        </a>
+    </article>
+    `;
 }
 
 async function initProductDetails(products) {
@@ -184,7 +239,7 @@ function addToCart(product) {
     const cart = JSON.parse(localStorage.getItem('shopEaseCart') || '[]');
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     if (totalItems >= MAX_CART_ITEMS) {
-        alert('You have reached the maximum cart quantity. Please checkout first.');
+        showToast( 'Cart limit reached');
         return;
     }
     const existing = cart.find(item => item.id === product.id);
@@ -194,6 +249,111 @@ function addToCart(product) {
         cart.push({ id: product.id, quantity: 1 });
     }
     localStorage.setItem('shopEaseCart', JSON.stringify(cart));
-    alert('Product added to cart');
+    updateCartCount();
+showToast(`${product.name} added to cart`);
     window.dispatchEvent(new Event('storage'));
+}
+function quickAddToCart(productId) {
+    if (!window.shopProducts) return;
+
+    const product = window.shopProducts.find(
+        p => p.id === productId
+    );
+
+    if (product) {
+        addToCart(product);
+    }
+}
+
+function toggleWishlist(productId) {
+
+    let wishlist =
+        JSON.parse(
+            localStorage.getItem(
+                'shopEaseWishlist'
+            ) || '[]'
+        );
+
+    const index =
+        wishlist.indexOf(productId);
+
+    if (index > -1) {
+        wishlist.splice(index, 1);
+    } else {
+        wishlist.push(productId);
+    }
+
+    localStorage.setItem(
+        'shopEaseWishlist',
+        JSON.stringify(wishlist)
+    );
+
+    updateWishlistCount();
+
+    showToast('Wishlist updated');
+}
+
+function updateWishlistCount() {
+
+    const badge =
+        document.getElementById(
+            'wishlistCount'
+        );
+
+    if (!badge) return;
+
+    const count =
+        JSON.parse(
+            localStorage.getItem(
+                'shopEaseWishlist'
+            ) || '[]'
+        ).length;
+
+    badge.textContent = count;
+}
+
+function updateCartCount() {
+
+    const badge =
+        document.getElementById(
+            'cartCount'
+        );
+
+    if (!badge) return;
+
+    const cart =
+        JSON.parse(
+            localStorage.getItem(
+                'shopEaseCart'
+            ) || '[]'
+        );
+
+    const count =
+        cart.reduce(
+            (sum, item) =>
+                sum + item.quantity,
+            0
+        );
+
+    badge.textContent = count;
+}
+
+function showToast(message) {
+
+    const toast =
+        document.createElement('div');
+
+    toast.className =
+        'toast-notification';
+
+    toast.textContent =
+        message;
+
+    document.body.appendChild(
+        toast
+    );
+
+    setTimeout(() => {
+        toast.remove();
+    }, 2500);
 }

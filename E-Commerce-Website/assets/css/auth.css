@@ -1,109 +1,305 @@
+/* ==========================
+AUTHENTICATION MODULE V2
+ShopEase V2
+========================== */
+
+.auth-tag {
+display: inline-block;
+margin-bottom: 1rem;
+padding: 0.45rem 1rem;
+border-radius: 999px;
+font-size: 0.9rem;
+font-weight: 600;
+background: rgba(0,0,0,0.05);
+}
+
+/* ==========================
+AUTH OPTIONS
+========================== */
+
 .auth-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0 1.5rem;
-    gap: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+margin: 1rem 0 1.5rem;
+flex-wrap: wrap;
 }
 
 .remember-me {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    cursor: pointer;
-    font-size: .95rem;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+cursor: pointer;
+font-size: 0.95rem;
+user-select: none;
+}
+
+.remember-me input {
+cursor: pointer;
 }
 
 .forgot-link,
 .auth-link {
-    text-decoration: none;
-    font-weight: 600;
+text-decoration: none;
+font-weight: 600;
+transition: opacity 0.3s ease;
 }
 
-.auth-features {
-    margin-top: 2rem;
+.forgot-link:hover,
+.auth-link:hover {
+opacity: 0.8;
 }
 
-.feature-item {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-    margin-bottom: 1rem;
-}
-
-.feature-item span {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-
-.auth-tag {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.password-strength {
-    margin: 0.75rem 0 1.25rem;
-}
-
-.strength-bar {
-    height: 6px;
-    border-radius: 999px;
-    margin-bottom: 0.5rem;
-    background: #ddd;
-}
-
-.terms-check {
-    margin: 1rem 0 1.5rem;
-}
-
-.terms-check label {
-    display: flex;
-    gap: 0.75rem;
-    align-items: flex-start;
-    cursor: pointer;
-}
-
-.auth-features {
-    margin-top: 2rem;
-}
-
-.feature-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
+/* ==========================
+PASSWORD FIELD
+========================== */
 
 .password-field {
-    position: relative;
-    display: flex;
-    align-items: center;
+position: relative;
+display: flex;
+align-items: center;
+width: 100%;
 }
 
 .password-field input {
-    width: 100%;
+width: 100%;
+padding-right: 48px;
 }
 
 .password-toggle {
-    position: absolute;
-    right: 12px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
+position: absolute;
+right: 12px;
+border: none;
+background: transparent;
+cursor: pointer;
+font-size: 1rem;
+padding: 0.25rem;
+transition: transform 0.2s ease;
 }
 
+.password-toggle:hover {
+transform: scale(1.1);
+}
+
+/* ==========================
+PASSWORD STRENGTH
+========================== */
+
 .password-strength {
-    margin: 0.75rem 0 1.5rem;
+margin: 0.75rem 0 1.5rem;
 }
 
 .strength-bar {
-    height: 6px;
-    border-radius: 999px;
-    background: #ddd;
-    margin-bottom: 0.5rem;
-    transition: all 0.3s ease;
+height: 6px;
+border-radius: 999px;
+background: #ddd;
+overflow: hidden;
+position: relative;
 }
 
+.strength-bar::after {
+content: "";
+display: block;
+height: 100%;
+width: 0;
+transition: width 0.3s ease;
+}
+
+.strength-bar.weak::after {
+width: 33%;
+background: #dc3545;
+}
+
+.strength-bar.medium::after {
+width: 66%;
+background: #ffc107;
+}
+
+.strength-bar.strong::after {
+width: 100%;
+background: #28a745;
+}
+
+.strength-text {
+display: block;
+margin-top: 0.5rem;
+font-size: 0.9rem;
+}
+
+/* ==========================
+TERMS & CONDITIONS
+========================== */
+
+.terms-check {
+margin: 1rem 0 1.5rem;
+}
+
+.terms-check label {
+display: flex;
+gap: 0.75rem;
+align-items: flex-start;
+cursor: pointer;
+line-height: 1.5;
+}
+
+.terms-check input {
+margin-top: 2px;
+}
+
+/* ==========================
+FEATURES SECTION
+========================== */
+
+.auth-features {
+margin-top: 2rem;
+padding-top: 1.5rem;
+border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.feature-item {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+margin-bottom: 1rem;
+transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+transform: translateX(4px);
+}
+
+.feature-item span:first-child {
+font-size: 1.2rem;
+}
+
+.feature-item span:last-child {
+font-weight: 500;
+}
+
+/* ==========================
+AUTH BUTTONS
+========================== */
+
+.auth-btn,
+.auth-submit {
+width: 100%;
+border: none;
+cursor: pointer;
+padding: 0.9rem 1rem;
+border-radius: 8px;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.auth-btn:hover,
+.auth-submit:hover {
+transform: translateY(-2px);
+}
+
+/* ==========================
+AUTH CARD
+========================== */
+
+.auth-card {
+border-radius: 16px;
+padding: 2rem;
+box-shadow:
+0 10px 25px rgba(0,0,0,0.08);
+}
+
+.auth-card h1,
+.auth-card h2 {
+margin-bottom: 1rem;
+}
+
+.auth-card p {
+line-height: 1.6;
+}
+
+/* ==========================
+FORM INPUTS
+========================== */
+
+.auth-form input,
+.auth-form select,
+.auth-form textarea {
+width: 100%;
+padding: 0.85rem 1rem;
+border-radius: 8px;
+border: 1px solid #ddd;
+transition: all 0.3s ease;
+}
+
+.auth-form input:focus,
+.auth-form select:focus,
+.auth-form textarea:focus {
+outline: none;
+border-color: #0d6efd;
+box-shadow:
+0 0 0 3px rgba(13,110,253,0.15);
+}
+
+/* ==========================
+ALERTS
+========================== */
+
+.auth-alert {
+padding: 1rem;
+border-radius: 8px;
+margin-bottom: 1rem;
+}
+
+.auth-alert.success {
+background: #d4edda;
+}
+
+.auth-alert.error {
+background: #f8d7da;
+}
+
+.auth-alert.warning {
+background: #fff3cd;
+}
+
+/* ==========================
+MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+
+.auth-options {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.auth-card {
+    padding: 1.5rem;
+}
+
+.feature-item {
+    align-items: flex-start;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+
+.auth-card {
+    padding: 1.25rem;
+}
+
+.auth-tag {
+    font-size: 0.85rem;
+}
+
+.auth-btn,
+.auth-submit {
+    width: 100%;
+}
+
+
+}
