@@ -1,19 +1,300 @@
-.security-hero
+/* ==========================================
+   SHOP EASE V2 - SECURITY CENTER
+   ========================================== */
 
-.security-stats
-.stats-grid
-.stat-card
+/* HERO */
 
-.security-report-section
+.security-hero {
+    position: relative;
+    overflow: hidden;
 
-.security-grid
+    padding: 90px 40px;
 
-.section-header
+    margin-bottom: 40px;
 
-.security-features
-.features-grid
-.feature-card
+    border-radius: 28px;
 
-.compliance-section
-.compliance-grid
-.compliance-card
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #1e293b
+        );
+
+    color: #fff;
+
+    box-shadow: var(--shadow);
+}
+
+.security-hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.05);
+}
+
+.security-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    margin-bottom: 15px;
+}
+
+.security-hero p {
+    max-width: 700px;
+    font-size: 1.05rem;
+    opacity: .9;
+}
+
+/* SECURITY STATS */
+
+.security-stats {
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+
+.stat-card {
+    background: #fff;
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    text-align: center;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: var(--shadow-soft);
+
+    transition: .3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h2 {
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+    color: var(--brand);
+}
+
+.stat-card p {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* REPORT SECTION */
+
+.security-report-section {
+    margin-bottom: 60px;
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+/* SECTION HEADER */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    margin-bottom: 0;
+}
+
+/* SECURITY FEATURES */
+
+.security-features {
+    margin-bottom: 70px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 22px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: var(--shadow-soft);
+
+    transition: .3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+.feature-card i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 18px;
+
+    border-radius: 16px;
+
+    background: rgba(37,99,235,.1);
+
+    color: #2563eb;
+
+    font-size: 1.6rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* COMPLIANCE */
+
+.compliance-section {
+    margin-top: 70px;
+}
+
+.compliance-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.compliance-card {
+    background: #fff;
+
+    padding: 28px;
+
+    border-radius: 22px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: var(--shadow-soft);
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.compliance-card:hover {
+    transform: translateY(-5px);
+}
+
+.compliance-card img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+
+    margin-bottom: 16px;
+}
+
+.compliance-card h3 {
+    margin-bottom: 10px;
+}
+
+.compliance-card p {
+    color: var(--muted);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .features-grid,
+    .compliance-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .security-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .security-hero {
+        padding: 60px 25px;
+    }
+
+    .features-grid,
+    .compliance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card,
+    .compliance-card,
+    .stat-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .security-hero h1 {
+        font-size: 2rem;
+    }
+
+    .stat-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
