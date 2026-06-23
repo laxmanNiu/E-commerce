@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "firstName": "Admin",
+        "lastName": "User",
+        "username": "admin",
+        "email": "admin@shopease.com",
+        "password": "admin123",
+        "phone": "+91-9876543210",
+        "role": "admin",
+        "avatar": "assets/images/users/admin-avatar.png",
+        "isVerified": true,
+        "isActive": true,
+        "createdAt": "2026-01-01T10:00:00Z",
+        "lastLogin": null,
+        "wishlist": [],
+        "cart": [],
+        "addresses": [
+            {
+                "id": 1,
+                "type": "Home",
+                "fullName": "Admin User",
+                "phone": "+91-9876543210",
+                "addressLine1": "123 Business Street",
+                "addressLine2": "",
+                "city": "Delhi",
+                "state": "Delhi",
+                "postalCode": "110001",
+                "country": "India",
+                "isDefault": true
+            }
+        ],
+        "orders": []
+    },
+    {
+        "id": 2,
+        "firstName": "Rahul",
+        "lastName": "Sharma",
+        "username": "rahulsharma",
+        "email": "rahul@example.com",
+        "password": "rahul123",
+        "phone": "+91-9123456780",
+        "role": "customer",
+        "avatar": "assets/images/users/default-avatar.png",
+        "isVerified": true,
+        "isActive": true,
+        "createdAt": "2026-03-15T12:30:00Z",
+        "lastLogin": null,
+        "wishlist": [5, 8],
+        "cart": [
+            {
+                "productId": 3,
+                "quantity": 1
+            }
+        ],
+        "addresses": [
+            {
+                "id": 1,
+                "type": "Home",
+                "fullName": "Rahul Sharma",
+                "phone": "+91-9123456780",
+                "addressLine1": "221 MG Road",
+                "addressLine2": "Near Metro Station",
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "postalCode": "560001",
+                "country": "India",
+                "isDefault": true
+            }
+        ],
+        "orders": [1001, 1002]
+    },
+    {
+        "id": 3,
+        "firstName": "Priya",
+        "lastName": "Verma",
+        "username": "priyaverma",
+        "email": "priya@example.com",
+        "password": "priya123",
+        "phone": "+91-9988776655",
+        "role": "customer",
+        "avatar": "assets/images/users/default-avatar.png",
+        "isVerified": false,
+        "isActive": true,
+        "createdAt": "2026-04-20T09:15:00Z",
+        "lastLogin": null,
+        "wishlist": [2, 7, 10],
+        "cart": [],
+        "addresses": [
+            {
+                "id": 1,
+                "type": "Home",
+                "fullName": "Priya Verma",
+                "phone": "+91-9988776655",
+                "addressLine1": "45 Civil Lines",
+                "addressLine2": "",
+                "city": "Jaipur",
+                "state": "Rajasthan",
+                "postalCode": "302001",
+                "country": "India",
+                "isDefault": true
+            }
+        ],
+        "orders": []
+    }
+]

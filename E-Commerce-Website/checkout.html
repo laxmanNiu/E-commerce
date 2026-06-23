@@ -1,350 +1,848 @@
-
 <!DOCTYPE html>
+
+
+
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | ShopEase</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/checkout.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Checkout | ShopEase</title>
+
+
+
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="assets/css/checkout.css">
+
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+
+
+
+
 </head>
+
+
 
 <body id="checkoutPage">
 
-    <div id="navbar-placeholder"></div>
 
-    <main class="page-content">
 
-        <section class="checkout-header">
 
-            <h1>Secure Checkout</h1>
 
-            <p>
-                Complete your order safely and securely.
-            </p>
+ <div id="navbar-placeholder"></div>
 
-        </section>
 
-        <section class="checkout-container">
 
-            <!-- Left Side -->
-            <div class="checkout-left">
 
-                <form id="checkoutForm">
+<main class="page-content">
 
-                    <!-- Customer Information -->
-                    <div class="checkout-card">
 
-                        <h2>Customer Information</h2>
 
-                        <div class="form-grid">
+    <!-- HERO -->
 
-                            <div class="form-group">
-                                <label for="customerName">
-                                    Full Name
-                                </label>
+    <section class="checkout-hero">
 
-                                <input
-                                    type="text"
-                                    id="customerName"
-                                    required>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="customerEmail">
-                                    Email
-                                </label>
 
-                                <input
-                                    type="email"
-                                    id="customerEmail"
-                                    required>
-                            </div>
+        <div class="checkout-badge">
 
-                            <div class="form-group">
-                                <label for="customerPhone">
-                                    Phone Number
-                                </label>
+            🔒 Secure SSL Protected Checkout
 
-                                <input
-                                    type="tel"
-                                    id="customerPhone"
-                                    required>
-                            </div>
+        </div>
 
-                        </div>
 
-                    </div>
 
-                    <!-- Shipping Address -->
-                    <div class="checkout-card">
+        <h1>Complete Your Purchase</h1>
 
-                        <h2>Shipping Address</h2>
 
-                        <div class="form-grid">
 
-                            <div class="form-group full-width">
+        <p>
 
-                                <label for="customerAddress">
-                                    Street Address
-                                </label>
+            Fast Delivery • Secure Payments • Easy Returns
 
-                                <input
-                                    type="text"
-                                    id="customerAddress"
-                                    required>
+        </p>
 
-                            </div>
 
-                            <div class="form-group">
 
-                                <label for="customerCity">
-                                    City
-                                </label>
+        <div class="checkout-progress">
 
-                                <input
-                                    type="text"
-                                    id="customerCity"
-                                    required>
 
-                            </div>
 
-                            <div class="form-group">
+            <div class="progress-step active">
 
-                                <label for="customerState">
-                                    State
-                                </label>
+                <span>1</span>
 
-                                <input
-                                    type="text"
-                                    id="customerState"
-                                    required>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="customerPostal">
-                                    Pincode
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="customerPostal"
-                                    required>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Payment Method -->
-                    <div class="checkout-card">
-
-                        <h2>Payment Method</h2>
-
-                        <div class="payment-options">
-
-                            <label class="payment-option">
-
-                                <input
-                                    type="radio"
-                                    name="payment"
-                                    value="cod"
-                                    checked>
-
-                                Cash On Delivery
-
-                            </label>
-
-                            <label class="payment-option">
-
-                                <input
-                                    type="radio"
-                                    name="payment"
-                                    value="upi">
-
-                                UPI Payment
-
-                            </label>
-
-                            <label class="payment-option">
-
-                                <input
-                                    type="radio"
-                                    name="payment"
-                                    value="card">
-
-                                Credit / Debit Card
-
-                            </label>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Submit -->
-                    <button
-                        type="submit"
-                        class="button place-order-btn">
-
-                        Place Order
-
-                    </button>
-
-                </form>
+                <p>Cart</p>
 
             </div>
 
-            <!-- Right Side -->
-            <aside class="checkout-right">
 
-                <div class="summary-card">
 
-                    <h2>Order Summary</h2>
+            <div class="progress-line active"></div>
 
-                    <div id="checkoutSummary">
-                        <section class="checkout-section">
 
-    <!-- Checkout Form -->
-    <div class="checkout-form">
-        <h2>Checkout</h2>
 
-        <form id="checkoutForm">
-            ...
-        </form>
-    </div>
+            <div class="progress-step active">
 
-    <!-- Order Summary -->
-    <aside class="checkout-summary">
+                <span>2</span>
 
-        <h3>Order Summary</h3>
+                <p>Checkout</p>
 
-        <div id="checkoutItems"></div>
+            </div>
 
-        <p>
-            <span>Subtotal</span>
-            <strong id="subtotal">$0.00</strong>
-        </p>
 
-        <p>
-            <span>Shipping</span>
-            <strong id="shipping">$0.00</strong>
-        </p>
 
-        <hr>
+            <div class="progress-line"></div>
 
-        <p class="order-total">
-            <span>Total</span>
-            <strong id="total">$0.00</strong>
-        </p>
 
-        <!-- ADD HERE -->
 
-        <div class="coupon-box">
-            <input type="text" placeholder="Enter Coupon Code">
-            <button class="button">Apply</button>
+            <div class="progress-step">
+
+                <span>3</span>
+
+                <p>Payment</p>
+
+            </div>
+
+
+
+            <div class="progress-line"></div>
+
+
+
+            <div class="progress-step">
+
+                <span>4</span>
+
+                <p>Done</p>
+
+            </div>
+
+
+
         </div>
 
-        <div class="checkout-security">
-            <p>🔒 Secure SSL Checkout</p>
-            <p>💳 Protected Payment Gateway</p>
-            <p>🚚 Fast & Reliable Delivery</p>
+
+
+    </section>
+
+
+
+    <!-- MAIN LAYOUT -->
+
+    <section class="checkout-layout">
+
+
+
+        <!-- LEFT -->
+
+        <div class="checkout-left">
+
+
+
+            <form id="checkoutForm">
+
+
+
+                <!-- CUSTOMER -->
+
+                <div class="glass-card">
+
+
+
+                    <div class="card-title">
+
+                        <span>👤</span>
+
+                        <h2>Customer Information</h2>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+
+                                Full Name
+
+                            </label>
+
+
+
+                            <input
+
+                                type="text"
+
+                                id="customerName"
+
+                                placeholder="John Doe"
+
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="customerEmail">
+
+                                Email Address
+
+                            </label>
+
+
+
+                            <input
+
+                                type="email"
+
+                                id="customerEmail"
+
+                                placeholder="john@example.com"
+
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+
+                                Phone Number
+
+                            </label>
+
+
+
+                            <input
+
+                                type="tel"
+
+                                id="customerPhone"
+
+                                placeholder="+91 9876543210"
+
+                                required>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- SHIPPING -->
+
+                <div class="glass-card">
+
+
+
+                    <div class="card-title">
+
+                        <span>📍</span>
+
+                        <h2>Shipping Address</h2>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+
+
+                        <div class="form-group full-width">
+
+
+
+                            <label for="customerAddress">
+
+                                Street Address
+
+                            </label>
+
+
+
+                            <input
+
+                                type="text"
+
+                                id="customerAddress"
+
+                                placeholder="House No, Street Name"
+
+                                required>
+
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+
+
+                            <label for="customerCity">
+
+                                City
+
+                            </label>
+
+
+
+                            <input
+
+                                type="text"
+
+                                id="customerCity"
+
+                                placeholder="City"
+
+                                required>
+
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+
+
+                            <label for="customerState">
+
+                                State
+
+                            </label>
+
+
+
+                            <input
+
+                                type="text"
+
+                                id="customerState"
+
+                                placeholder="State"
+
+                                required>
+
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+
+
+                            <label for="customerPostal">
+
+                                Pincode
+
+                            </label>
+
+
+
+                            <input
+
+                                type="text"
+
+                                id="customerPostal"
+
+                                placeholder="244001"
+
+                                required>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- PAYMENT -->
+
+                <div class="glass-card">
+
+
+
+                    <div class="card-title">
+
+                        <span>💳</span>
+
+                        <h2>Payment Method</h2>
+
+                    </div>
+
+
+
+                    <div class="payment-options">
+
+
+
+                        <label class="payment-option">
+
+
+
+                            <input
+
+                                type="radio"
+
+                                name="payment"
+
+                                value="cod"
+
+                                checked>
+
+
+
+                            <div class="payment-content">
+
+
+
+                                <h4>
+
+                                    Cash On Delivery
+
+                                </h4>
+
+
+
+                                <p>
+
+                                    Pay after receiving your order
+
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </label>
+
+
+
+                        <label class="payment-option">
+
+
+
+                            <input
+
+                                type="radio"
+
+                                name="payment"
+
+                                value="upi">
+
+
+
+                            <div class="payment-content">
+
+
+
+                                <h4>
+
+                                    UPI Payment
+
+                                </h4>
+
+
+
+                                <p>
+
+                                    Google Pay, PhonePe, Paytm
+
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </label>
+
+
+
+                        <label class="payment-option">
+
+
+
+                            <input
+
+                                type="radio"
+
+                                name="payment"
+
+                                value="card">
+
+
+
+                            <div class="payment-content">
+
+
+
+                                <h4>
+
+                                    Credit / Debit Card
+
+                                </h4>
+
+
+
+                                <p>
+
+                                    Visa, RuPay, Mastercard
+
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </label>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- PLACE ORDER -->
+
+                <button
+
+                    type="submit"
+
+                    class="place-order-btn">
+
+
+
+                    🚀 Place Secure Order
+
+
+
+                </button>
+
+
+
+            </form>
+
+
+
         </div>
 
-    </aside>
 
-</section>
 
-                    </div>
+        <!-- RIGHT -->
 
-                    <hr>
+        <aside class="checkout-right">
 
-                    <div class="summary-row">
-                        <span>Shipping</span>
-                        <span>$5.00</span>
-                    </div>
 
-                    <div class="summary-row">
-                        <span>Discount</span>
-                        <span id="checkoutDiscount">
-                            $0.00
-                        </span>
-                    </div>
 
-                    <div class="summary-row total-row">
+            <!-- ORDER SUMMARY -->
 
-                        <strong>Total</strong>
+            <div class="summary-card">
 
-                        <strong id="checkoutTotal">
-                            $0.00
-                        </strong>
 
-                    </div>
+
+                <div class="summary-header">
+
+
+
+                    <h2>
+
+                        🛒 Order Summary
+
+                    </h2>
+
+
 
                 </div>
 
-                <!-- Coupon -->
-                <div class="coupon-card">
 
-                    <h3>Have a Coupon?</h3>
 
-                    <div class="coupon-box">
+                <div id="checkoutSummary">
 
-                        <input
-                            type="text"
-                            id="couponCode"
-                            placeholder="Enter Coupon">
 
-                        <button
-                            type="button"
-                            id="applyCoupon">
 
-                            Apply
+                    <!-- checkout.js renders items here -->
 
-                        </button>
 
-                    </div>
 
                 </div>
 
-                <!-- Security -->
-                <div class="trust-card">
 
-                    <h3>Why Shop With Us?</h3>
 
-                    <ul>
+                <hr>
 
-                        <li>🔒 Secure Checkout</li>
 
-                        <li>🚚 Fast Delivery</li>
 
-                        <li>⭐ Trusted Products</li>
+                <div class="summary-row">
 
-                        <li>🔄 Easy Returns</li>
+                    <span>Shipping</span>
 
-                    </ul>
+                    <span>$5.00</span>
 
                 </div>
 
-            </aside>
 
-        </section>
 
-    </main>
+                <div class="summary-row">
 
-    <div id="footer-placeholder"></div>
+                    <span>Discount</span>
 
-    <div id="scroll-top-placeholder"></div>
+                    <span id="checkoutDiscount">
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/checkout.js"></script>
+                        $0.00
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="summary-row total-row">
+
+
+
+                    <strong>Total</strong>
+
+
+
+                    <strong id="checkoutTotal">
+
+                        $0.00
+
+                    </strong>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- COUPON -->
+
+            <div class="coupon-card">
+
+
+
+                <h3>
+
+                    🎁 Have a Coupon?
+
+                </h3>
+
+
+
+                <div class="coupon-box">
+
+
+
+                    <input
+
+                        type="text"
+
+                        id="couponCode"
+
+                        placeholder="Enter Coupon Code">
+
+
+
+                    <button
+
+                        type="button"
+
+                        id="applyCoupon">
+
+
+
+                        Apply
+
+
+
+                    </button>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- TRUST -->
+
+            <div class="trust-card">
+
+
+
+                <h3>
+
+                    Why Shop With Us?
+
+                </h3>
+
+
+
+                <ul>
+
+
+
+                    <li>
+
+                        🔒 Bank-Level Security
+
+                    </li>
+
+
+
+                    <li>
+
+                        🚚 Fast Delivery
+
+                    </li>
+
+
+
+                    <li>
+
+                        ⭐ Premium Quality Products
+
+                    </li>
+
+
+
+                    <li>
+
+                        💳 Secure Payment Gateway
+
+                    </li>
+
+
+
+                    <li>
+
+                        🔄 Easy Returns
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+            </div>
+
+
+
+            <!-- GUARANTEE -->
+
+            <div class="guarantee-card">
+
+
+
+                <h3>
+
+                    ShopEase Promise
+
+                </h3>
+
+
+
+                <p>
+
+                    Every order is protected with secure payment processing,
+
+                    trusted delivery partners and hassle-free customer support.
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </aside>
+
+
+
+    </section>
+
+
+
+</main>
+
+
+
+<div id="footer-placeholder"></div>
+
+
+
+<div id="scroll-top-placeholder"></div>
+
+
+
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/checkout.js"></script>
+
+```
+
+
 
 </body>
 
-</html>
 
+
+</html>

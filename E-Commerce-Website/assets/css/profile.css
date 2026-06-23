@@ -342,3 +342,6 @@
         height: 90px;
     }
 }
+.logo-text {
+    display: none;
+}

@@ -368,3 +368,6 @@
         width: 100%;
     }
 }
+.logo-text {
+    display: none;
+}

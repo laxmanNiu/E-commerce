@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Electronics",
+        "slug": "electronics",
+        "icon": "💻",
+        "image": "assets/images/categories/electronics.jpg",
+        "description": "Latest gadgets, accessories, and smart devices.",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Fashion",
+        "slug": "fashion",
+        "icon": "👕",
+        "image": "assets/images/categories/fashion.jpg",
+        "description": "Trending clothing and fashion accessories.",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "Footwear",
+        "slug": "footwear",
+        "icon": "👟",
+        "image": "assets/images/categories/footwear.jpg",
+        "description": "Comfortable and stylish shoes for everyone.",
+        "featured": true
+    },
+    {
+        "id": 4,
+        "name": "Home & Kitchen",
+        "slug": "home-kitchen",
+        "icon": "🏠",
+        "image": "assets/images/categories/home-kitchen.jpg",
+        "description": "Essentials for your home and kitchen.",
+        "featured": true
+    },
+    {
+        "id": 5,
+        "name": "Beauty",
+        "slug": "beauty",
+        "icon": "💄",
+        "image": "assets/images/categories/beauty.jpg",
+        "description": "Beauty products and personal care items.",
+        "featured": false
+    },
+    {
+        "id": 6,
+        "name": "Sports",
+        "slug": "sports",
+        "icon": "⚽",
+        "image": "assets/images/categories/sports.jpg",
+        "description": "Sports gear and fitness accessories.",
+        "featured": false
+    },
+    {
+        "id": 7,
+        "name": "Books",
+        "slug": "books",
+        "icon": "📚",
+        "image": "assets/images/categories/books.jpg",
+        "description": "Educational and entertainment books.",
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Toys",
+        "slug": "toys",
+        "icon": "🧸",
+        "image": "assets/images/categories/toys.jpg",
+        "description": "Fun toys and games for kids.",
+        "featured": false
+    },
+    {
+        "id": 9,
+        "name": "Groceries",
+        "slug": "groceries",
+        "icon": "🛒",
+        "image": "assets/images/categories/groceries.jpg",
+        "description": "Daily essentials and grocery items.",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "name": "Watches",
+        "slug": "watches",
+        "icon": "⌚",
+        "image": "assets/images/categories/watches.jpg",
+        "description": "Premium and smart watches.",
+        "featured": false
+    },
+    {
+        "id": 11,
+        "name": "Furniture",
+        "slug": "furniture",
+        "icon": "🛋️",
+        "image": "assets/images/categories/furniture.jpg",
+        "description": "Modern furniture for home and office.",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "name": "Mobile Accessories",
+        "slug": "mobile-accessories",
+        "icon": "📱",
+        "image": "assets/images/categories/mobile-accessories.jpg",
+        "description": "Chargers, cases, earphones, and more.",
+        "featured": true
+    }
+]

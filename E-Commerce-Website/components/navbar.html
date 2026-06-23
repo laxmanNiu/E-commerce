@@ -1,13 +1,48 @@
-<header class="site-header">
-    <div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="ShopEase" class="site-logo"></a></div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="categories.html">Categories</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <span id="authLinks"></span>
-        <a href="cart.html">Cart</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle">Menu</button>
+<header class="site-header glass-nav">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img
+                src="assets/images/logo.svg"
+                alt="ShopEase Logo"
+                class="site-logo"
+            >
+            <span class="logo-text">ShopEase</span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="categories.html">Categories</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <span id="authLinks"></span>
+
+            <a href="cart.html" class="cart-link">
+                🛒
+                <span id="cartCount">0</span>
+            </a>
+
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle Menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
 </header>

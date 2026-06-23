@@ -13,3 +13,98 @@
 .card:hover {
     transform: translateY(-4px);
 }
+:root {
+    --primary: #6366f1;
+    --secondary: #8b5cf6;
+    --accent: #06b6d4;
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.18);
+
+    --dark-bg: #0f172a;
+    --card-radius: 20px;
+
+    --shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25);
+
+    --transition: 0.3s ease;
+}
+.glass-card {
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid var(--glass-border);
+
+    border-radius: var(--card-radius);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+}
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #4338ca, transparent 40%),
+        radial-gradient(circle at bottom right, #06b6d4, transparent 40%),
+        #0f172a;
+
+    color: white;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-nav a {
+    padding: 12px 22px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 14px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all .3s ease;
+}
+
+.main-nav a:hover {
+    transform: translateY(-3px);
+
+    background: rgba(99,102,241,0.25);
+
+    border-color: rgba(99,102,241,.5);
+
+    box-shadow:
+        0 10px 25px rgba(99,102,241,.25);
+}
+
+.main-nav a.active {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    border: none;
+}
+.logo-text {
+    display: none;
+}

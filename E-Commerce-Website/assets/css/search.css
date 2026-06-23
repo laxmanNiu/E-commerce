@@ -378,3 +378,6 @@
         font-size: 2rem;
     }
 }
+.logo-text {
+    display: none;
+}

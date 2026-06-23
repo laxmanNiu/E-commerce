@@ -526,3 +526,6 @@
         height: 70px;
     }
 }
+.logo-text {
+    display: none;
+}

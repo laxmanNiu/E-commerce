@@ -324,3 +324,6 @@ body.dark-theme textarea {
     border-color: #4b5563;
     color: white;
 }
+.logo-text {
+    display: none;
+}
